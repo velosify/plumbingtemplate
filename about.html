@@ -1,0 +1,339 @@
+<!-- About Us - Prime Plumbing -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Prime Plumbing Services</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eeeef0","on-surface-variant": "#3e4850","surface-container-highest": "#e2e2e5","tertiary-fixed-dim": "#ffb876","tertiary": "#8d4f00","on-background": "#1a1c1e","tertiary-container": "#ea8c21","surface": "#f9f9fc","primary-fixed-dim": "#82cfff","inverse-primary": "#82cfff","on-tertiary-container": "#572f00","outline": "#6e7881","error": "#ba1a1a","on-tertiary": "#ffffff","surface-tint": "#00658d","surface-container-lowest": "#ffffff","on-secondary-fixed-variant": "#204b63","primary-container": "#00aeef","surface-bright": "#f9f9fc","on-primary-container": "#003e58","background": "#f9f9fc","primary-fixed": "#c6e7ff","secondary": "#3a637c","on-error": "#ffffff","tertiary-fixed": "#ffdcc0","surface-container-high": "#e8e8ea","inverse-surface": "#2f3133","secondary-fixed-dim": "#a3cce8","on-primary-fixed-variant": "#004c6b","on-tertiary-fixed-variant": "#6b3b00","on-secondary-container": "#3d657e","on-secondary": "#ffffff","primary": "#00658d","secondary-fixed": "#c6e7ff","on-primary-fixed": "#001e2d","secondary-container": "#b9e2ff","error-container": "#ffdad6","surface-dim": "#dadadc","surface-variant": "#e2e2e5","on-secondary-fixed": "#001e2d","on-error-container": "#93000a","inverse-on-surface": "#f0f0f3","on-primary": "#ffffff","surface-container-low": "#f3f3f6","on-tertiary-fixed": "#2d1600","outline-variant": "#bdc8d1","on-surface": "#1a1c1e"
+            },
+            "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+            "fontFamily": { "headline": ["Manrope"], "body": ["Inter"], "label": ["Inter"] }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .editorial-shadow { box-shadow: 0 20px 40px rgba(0, 30, 45, 0.06); }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .nav-bar {
+            background-color: #00aeef;
+            box-shadow: 0 10px 15px -3px rgba(0, 101, 141, 0.3), 0 4px 6px -4px rgba(0, 101, 141, 0.3);
+            border-bottom: 1px solid transparent;
+            transition: background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        backdrop-filter 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        -webkit-backdrop-filter 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .nav-bar.is-scrolled {
+            background-color: rgba(0, 174, 239, 0.45);
+            backdrop-filter: blur(22px) saturate(180%);
+            -webkit-backdrop-filter: blur(22px) saturate(180%);
+            box-shadow: 0 8px 32px rgba(0, 30, 45, 0.18),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.35),
+                        inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+            border-bottom-color: rgba(255, 255, 255, 0.18);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-background">
+<header class="nav-bar fixed top-0 w-full z-50">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="text-2xl font-black text-white tracking-tighter">Prime Plumbing</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-manrope text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors" href="index.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors" href="services.html">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-wide text-white border-b-2 border-white pb-1" href="about.html">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors" href="contact.html">Contact</a>
+<a href="contact.html" class="bg-white text-primary px-6 py-2 rounded-DEFAULT font-semibold hover:bg-primary-fixed transition-all duration-300 active:scale-95">Book Now</a>
+</div>
+<button id="mobileMenuBtn" class="md:hidden" aria-label="Toggle menu" aria-expanded="false">
+<span class="material-symbols-outlined text-white text-3xl" id="menuIcon">menu</span>
+</button>
+</nav>
+<div id="mobileMenu" class="md:hidden absolute top-full inset-x-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl shadow-xl hidden">
+<nav class="flex flex-col px-6 py-5 gap-1 font-manrope text-sm font-semibold">
+<a href="index.html" class="py-3 px-3 rounded-DEFAULT text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+<a href="services.html" class="py-3 px-3 rounded-DEFAULT text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">Services</a>
+<a href="about.html" class="py-3 px-3 rounded-DEFAULT bg-primary-fixed text-primary">About Us</a>
+<a href="contact.html" class="py-3 px-3 rounded-DEFAULT text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+<a href="contact.html" class="mt-3 bg-primary-container text-on-primary-container py-3 rounded-DEFAULT font-bold text-center">Book Now</a>
+</nav>
+</div>
+</header>
+<main class="pt-24">
+<section class="relative px-8 py-20 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Our Heritage</span>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-background tracking-tighter leading-[1.1] mb-8">
+                        The Story Behind <span class="text-primary">EliteFlow</span> Craftsmanship.
+                    </h1>
+<p class="text-on-surface-variant text-lg max-w-xl leading-relaxed mb-10">
+                        We don't just fix pipes; we engineer peace of mind. For over two decades, Prime Plumbing has been the silent architect of domestic comfort, blending heritage techniques with modern precision.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a href="services.html" class="bg-primary-container text-on-primary-container px-8 py-4 rounded-DEFAULT font-bold editorial-shadow hover:scale-[1.02] transition-transform inline-block">View Our Portfolio</a>
+<a href="contact.html" class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-DEFAULT font-bold transition-all inline-block">Learn More</a>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-lg overflow-hidden editorial-shadow transform lg:rotate-3">
+<img alt="Master plumber at work" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQx1Q6y2t-dtWSYLTkhRkDLlr7PZQC4a_WT3LniVgh26HG0O5xvfLWXF1wZLbGKjZ7Svjteq8ktF2Pvq5eYApYLPjE_gtNLDpXWDg1R1IsiApPFwFyTsO-6HrLy2xh17Rx4uVIAB1U3ydOr6MAzO2Kl_MWGRcn_PnoUga6559MQCM5ktUHOxQ7Ou75IsGUKlz-jcTEIE6hZIGikilS3fxt_R4UFLuTKogBWMh2JcwxV1HuF4j3TspQM9-hLT0ECjp7lgBMfBPbQyw9"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-DEFAULT editorial-shadow max-w-[280px] hidden sm:block">
+<div class="flex -space-x-4 mb-4">
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQq88Ru20KbSPIsaRLj6do-mpepywU9xEmWUUMA6nutP_J9AV05m3Y20HUEfQHgrOxNvmJ9gLeXqrgZjmoUTBGWQ83Q_4GtHsfBFJsq3KOEKqC2k96CKZYRi1p8gI0st-HbBiW1QCG9NtuGFixtQg3PxaA5tVpnRPm6je38ogiqBE_KcQeOTgyzpUHXQwQnvIIq-XlOT7OeRgDkfHpMg_Mzg0ybCzk-8AfHd4vTL6m8gs2bLSfcjzx4iRzByi5h2pJhAFBHby5GdPm"/>
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjHticJCDdW2YBSh9AiIFzCgM1QfxokcNKojkdATO7Dz_T1ZJiRCNCsbShtHNNFnYsCi5xnJLvwCJO35Tc3-QRgQfJTazfcg32Th_VhGXLOG-WmQ6nIlwJcy4cImv8_vGtgm_-3tzsbD2H1wJjiY1oL4zJLXmzii2I0MjDZPL_LBZVWGPZVQmSjpNP4eX0bmqtxv2tQpwRYM5NxJaRlDU9kTB4OXRhsQPS9orMqXmhzeWr3OBxjEUC8Vxm1ubE0NHAhlTOe-iSQfJj"/>
+<img class="w-12 h-12 rounded-full border-4 border-white object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQKw2C0bS3m9b8gIumABUNhCciaTNsqD_MsyQXwV4n8JNRM0qhVA0rhdhjq56OrpyCYpuZGaTRLpzCnPUhKVpMyK9z1PUm6FU8_1n6BopQeE99GAZkZPhoPFTJYbUa2MoNColDln1L3Sn5f9oMw6bK36Rhw4venZAXHtyloxNE64ZqZI2LTmesfoX6HqiE64PPnU5JWbSK0KLZ15RqkW2WWi92Ytpi7h13UfWtwk12lH3XqDMXoVjxRXXdPtGGnKoXpn9rDu5D4Tu4"/>
+<div class="w-12 h-12 rounded-full border-4 border-white bg-primary text-white flex items-center justify-center text-xs font-bold">+18k</div>
+</div>
+<h4 class="font-headline font-bold text-on-background">18k+ Satisfied Customers</h4>
+<p class="text-xs text-on-surface-variant mt-1 leading-snug">The hallmark of trust across the tri-state area.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl font-bold tracking-tight mb-6">Built on Authority, Powered by Expertise</h2>
+<p class="text-on-surface-variant">Our foundation rests on three pillars of excellence that redefine what it means to be a service provider in the 21st century.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-lg editorial-shadow transition-transform hover:-translate-y-2">
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">verified</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Brand Authority</h3>
+<p class="text-on-surface-variant leading-relaxed">Recognized as the industry gold standard for technical precision and editorial-grade customer service. We set the benchmarks others follow.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-lg editorial-shadow transition-transform hover:-translate-y-2 relative overflow-hidden">
+<div class="absolute -top-4 -right-4 bg-primary-container text-on-primary-container text-[10px] font-bold px-6 py-4 rotate-45">ELITE</div>
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">engineering</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">250+ Master Plumbers</h3>
+<p class="text-on-surface-variant leading-relaxed">Our roster consists only of the top 1% of craftsmen. Each technician undergoes a rigorous 50-point certification process annually.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-lg editorial-shadow transition-transform hover:-translate-y-2">
+<div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">100% Quality Mandate</h3>
+<p class="text-on-surface-variant leading-relaxed">We don't settle for "fixed." We strive for perfection. Every job comes with an ironclad guarantee that leaves no room for error.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Testimonials</span>
+<h2 class="font-headline text-4xl font-bold mt-4 leading-tight">Hear it From the Homes We've Perfected</h2>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex gap-8 overflow-visible">
+<div class="min-w-[350px] md:min-w-[500px] bg-white rounded-lg p-10 editorial-shadow">
+<div class="flex items-center gap-4 mb-8">
+<img class="w-16 h-16 rounded-full object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2OvFcbJSKKlepeuj6_z_lbLk-eZR76lpibYRDcZBNZHSaMSYTcBmhQOqTleqeFfve5j7SrWzq2nJR7MUmnHZlQyGaDMONGa1mhOwSZvqNOHRMdmjKVy4HUh7B71k6il74Kr99n1JEdvXQQtmkKN9GnDTzjIyhumdPmlJvoOOK5ClzEu_ayQE578ZNoLWFYLupJDxpdIxH5uu4KTTjgNS66q6f-4fV6KjVJtDbmdr4r7anoOHtDYIWHHWW-N_nretHoZFqMGZvrnyF"/>
+<div>
+<h4 class="font-bold text-lg">Sarah Jenkins</h4>
+<div class="flex text-tertiary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<blockquote class="text-xl italic text-on-surface leading-relaxed">
+                            "The level of professionalism was unlike any service company I've dealt with. They didn't just fix the leak; they diagnosed potential issues I hadn't even noticed yet. Truly elite service."
+                        </blockquote>
+</div>
+<div class="min-w-[350px] md:min-w-[500px] bg-white rounded-lg p-10 editorial-shadow opacity-50">
+<div class="flex items-center gap-4 mb-8">
+<img class="w-16 h-16 rounded-full object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFEWTZBNi0X_vkbCz7NfRmIsfdnGhJm6ErpTSpWDODy5CsN0PM2ICY-t65E4hH0qe5HXzwGhbWtRZVPCj3LERHZek6WXa2BDx7xQLgDsIbjzVYQwjnYYSEBJaE04vfY_eZajcYD5KPUYLLSXPgz5HVplRACPmPYPWczGFowbQY9pvT8W1z_7H0BgygEUsL0aUNtMHSkqP-I-Vht00tw8c1DVlV6b23fwfcLr4eU_PjPLigVXxcN_tOMk4qJxeKtLyqrCQQFG_bq5oz"/>
+<div>
+<h4 class="font-bold text-lg">Michael Chen</h4>
+<div class="flex text-tertiary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<blockquote class="text-xl italic text-on-surface leading-relaxed">
+                            "Responsive, clean, and masterfully skilled. They arrived within the hour for my emergency and handled it with incredible calm and precision."
+                        </blockquote>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold mb-4">Common Enquiries</h2>
+<p class="text-on-surface-variant">Everything you need to know about our workflow and standards.</p>
+</div>
+<div class="space-y-4">
+<details class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden" open>
+<summary class="w-full flex justify-between items-center px-8 py-6 text-left cursor-pointer font-bold text-lg text-on-surface">
+                            How do I initiate a consultation?
+                            <span class="material-symbols-outlined text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
+                            You can schedule an initial assessment through our "Book Now" portal or by calling our 24/7 concierge line. We offer both virtual diagnostic previews and on-site architectural reviews.
+                        </div>
+</details>
+<details class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden">
+<summary class="w-full flex justify-between items-center px-8 py-6 text-left cursor-pointer font-bold text-lg text-on-surface">
+                            What does your Team Building process look like?
+                            <span class="material-symbols-outlined text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
+                            Our team is curated through a multi-stage vetting process. We recruit master craftsmen who possess not only technical mastery but also exceptional communication skills and architectural awareness.
+                        </div>
+</details>
+<details class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden">
+<summary class="w-full flex justify-between items-center px-8 py-6 text-left cursor-pointer font-bold text-lg text-on-surface">
+                            What are the available payment options?
+                            <span class="material-symbols-outlined text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
+                            We accept all major credit cards, digital wallets, and offer flexible financing for larger architectural plumbing projects through our partner networks.
+                        </div>
+</details>
+<details class="bg-surface-container-lowest rounded-DEFAULT overflow-hidden">
+<summary class="w-full flex justify-between items-center px-8 py-6 text-left cursor-pointer font-bold text-lg text-on-surface">
+                            Emergency service response times?
+                            <span class="material-symbols-outlined text-primary">expand_more</span>
+</summary>
+<div class="px-8 pb-6 text-on-surface-variant leading-relaxed">
+                            Our emergency units are stationed across the city to ensure a response time of under 60 minutes for critical system failures.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-primary text-on-primary p-12 lg:p-20 rounded-lg relative overflow-hidden editorial-shadow">
+<div class="relative z-10 lg:w-2/3">
+<h2 class="font-headline text-4xl lg:text-6xl font-extrabold mb-8 leading-tight">Ready to Experience Elite Craftsmanship?</h2>
+<p class="text-primary-fixed text-xl mb-12 max-w-xl opacity-90">Join the 18,000+ homeowners who trust Prime Plumbing for their most critical domestic systems.</p>
+<a href="contact.html" class="bg-white text-primary px-10 py-5 rounded-DEFAULT font-bold text-lg shadow-xl hover:scale-[1.05] transition-transform inline-block">Schedule Your Consultation</a>
+</div>
+<div class="absolute right-0 bottom-0 top-0 w-1/3 bg-primary-container opacity-20 transform skew-x-12 translate-x-20 hidden lg:block"></div>
+<div class="absolute -right-20 top-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<footer class="bg-slate-50 dark:bg-slate-950 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-slate-900 dark:text-white mb-6">Prime Plumbing</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed">
+                    The Architectural Authority in Handyman Craft. Redefining home services since 2004.
+                </p>
+</div>
+<div>
+<h5 class="text-sky-700 dark:text-sky-400 font-bold mb-6">Services</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="services.html">Residential</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="services.html">Commercial</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="services.html">Emergency</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-sky-700 dark:text-sky-400 font-bold mb-6">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-sky-700 font-bold font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="about.html">Our Story</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="#">Careers</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="#">Press</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-sky-700 dark:text-sky-400 font-bold mb-6">Support</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="contact.html">Book Appointment</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="contact.html">Contact Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 font-inter text-sm hover:underline decoration-sky-500 underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-xs">© 2026 Prime Plumbing Services. The Architectural Authority in Handyman Craft.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-slate-400 hover:text-primary transition-colors cursor-pointer">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary transition-colors cursor-pointer">share</span>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-8 right-8 z-[60]">
+<a href="contact.html" class="bg-white/80 glass-nav editorial-shadow p-4 rounded-full flex items-center gap-4 border border-white hover:scale-105 transition-transform group">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+<div class="pr-4 hidden sm:block">
+<p class="text-[10px] uppercase tracking-widest font-bold text-primary">Instant Booking</p>
+<p class="text-sm font-bold text-on-background">Check Availability</p>
+</div>
+</a>
+</div>
+<script>
+(function() {
+  const nav = document.querySelector('.nav-bar');
+  if (nav) {
+    const onScroll = () => {
+      if (window.scrollY > 16) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  const btn = document.getElementById('mobileMenuBtn');
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('menuIcon');
+  if (!btn || !menu || !icon) return;
+  btn.addEventListener('click', () => {
+    const willOpen = menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    icon.textContent = willOpen ? 'close' : 'menu';
+    btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      icon.textContent = 'menu';
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,927 @@
+<!-- Home - Prime Plumbing -->
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Prime Plumbing Services | The Architectural Authority</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eeeef0",
+                    "on-surface-variant": "#3e4850",
+                    "surface-container-highest": "#e2e2e5",
+                    "tertiary-fixed-dim": "#ffb876",
+                    "tertiary": "#8d4f00",
+                    "on-background": "#1a1c1e",
+                    "tertiary-container": "#ea8c21",
+                    "surface": "#f9f9fc",
+                    "primary-fixed-dim": "#82cfff",
+                    "inverse-primary": "#82cfff",
+                    "on-tertiary-container": "#572f00",
+                    "outline": "#6e7881",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "surface-tint": "#00658d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#204b63",
+                    "primary-container": "#00aeef",
+                    "surface-bright": "#f9f9fc",
+                    "on-primary-container": "#003e58",
+                    "background": "#f9f9fc",
+                    "primary-fixed": "#c6e7ff",
+                    "secondary": "#3a637c",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#ffdcc0",
+                    "surface-container-high": "#e8e8ea",
+                    "inverse-surface": "#2f3133",
+                    "secondary-fixed-dim": "#a3cce8",
+                    "on-primary-fixed-variant": "#004c6b",
+                    "on-tertiary-fixed-variant": "#6b3b00",
+                    "on-secondary-container": "#3d657e",
+                    "on-secondary": "#ffffff",
+                    "primary": "#00658d",
+                    "secondary-fixed": "#c6e7ff",
+                    "on-primary-fixed": "#001e2d",
+                    "secondary-container": "#b9e2ff",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dadadc",
+                    "surface-variant": "#e2e2e5",
+                    "on-secondary-fixed": "#001e2d",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f0f0f3",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f3f3f6",
+                    "on-tertiary-fixed": "#2d1600",
+                    "outline-variant": "#bdc8d1",
+                    "on-surface": "#1a1c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 30, 45, 0.06);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+        .reveal {
+            opacity: 0;
+            transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: transform, opacity;
+        }
+        .reveal-up    { transform: translateY(40px); }
+        .reveal-down  { transform: translateY(-30px); }
+        .reveal-left  { transform: translateX(-60px); }
+        .reveal-right { transform: translateX(60px); }
+        .reveal-scale { transform: scale(0.92); }
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translate3d(0,0,0) scale(1);
+        }
+        .reveal-d1 { transition-delay: 0.08s; }
+        .reveal-d2 { transition-delay: 0.16s; }
+        .reveal-d3 { transition-delay: 0.24s; }
+        .reveal-d4 { transition-delay: 0.32s; }
+        .reveal-d5 { transition-delay: 0.40s; }
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+        }
+        .nav-bar {
+            background-color: #00aeef;
+            box-shadow: 0 10px 15px -3px rgba(0, 101, 141, 0.3), 0 4px 6px -4px rgba(0, 101, 141, 0.3);
+            border-bottom: 1px solid transparent;
+            transition: background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        backdrop-filter 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        -webkit-backdrop-filter 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                        border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .nav-bar.is-scrolled {
+            background-color: rgba(0, 174, 239, 0.45);
+            backdrop-filter: blur(22px) saturate(180%);
+            -webkit-backdrop-filter: blur(22px) saturate(180%);
+            box-shadow: 0 8px 32px rgba(0, 30, 45, 0.18),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.35),
+                        inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+            border-bottom-color: rgba(255, 255, 255, 0.18);
+        }
+
+        /* Kitchen Plumbing 3D — hero blueprint */
+        .hero-3d-bg {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(1300px 900px at 45% 45%, #0c2a4a 0%, #081f38 55%, #061a2e 100%);
+            overflow: hidden;
+            z-index: 0;
+        }
+        .hero-3d-bg::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                repeating-linear-gradient(0deg, transparent 0 19px, rgba(19,50,79,.55) 19px 20px),
+                repeating-linear-gradient(90deg, transparent 0 19px, rgba(19,50,79,.55) 19px 20px),
+                repeating-linear-gradient(0deg, transparent 0 99px, rgba(28,71,114,.75) 99px 100px),
+                repeating-linear-gradient(90deg, transparent 0 99px, rgba(28,71,114,.75) 99px 100px);
+            pointer-events: none;
+        }
+        .hero-3d-bg::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(1400px 900px at 50% 50%, transparent 55%, rgba(0,0,0,.55) 100%);
+            pointer-events: none;
+        }
+        #c3d {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            cursor: grab;
+        }
+        #c3d:active { cursor: grabbing; }
+        .hero-3d-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+        .hero-3d-overlay > * { pointer-events: auto; }
+        .hero-3d-overlay .co {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background: rgba(10, 35, 64, 0.82);
+            border: 0.75px solid #9ed8ff;
+            padding: 4px 8px;
+            font-size: 9px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #cfe9ff;
+            font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .hero-3d-overlay .co .n { color: #9ed8ff; font-weight: 700; }
+        .hero-3d-overlay .co .sub { color: #6f9fc7; font-size: 8.5px; }
+        .hero-hud {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            padding: 8px 10px;
+            background: rgba(10, 35, 64, 0.7);
+            border: 1px solid #9ed8ff;
+            font-size: 9px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #cfe9ff;
+            font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+            z-index: 20;
+            backdrop-filter: blur(4px);
+            max-width: calc(100% - 24px);
+        }
+        .hero-hud button {
+            background: transparent;
+            border: 1px solid rgba(158, 216, 255, 0.35);
+            color: #cfe9ff;
+            font: inherit;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .hero-hud button:hover {
+            border-color: #9ed8ff;
+            background: rgba(158, 216, 255, 0.08);
+        }
+        .hero-hud button.on {
+            background: rgba(255, 106, 61, 0.15);
+            border-color: #ff6a3d;
+            color: #ffbda5;
+        }
+        .hero-sheet-id {
+            position: absolute;
+            top: 96px;
+            right: 32px;
+            font-size: 10px;
+            letter-spacing: 0.22em;
+            color: #6f9fc7;
+            font-family: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+            text-transform: uppercase;
+            z-index: 20;
+            pointer-events: none;
+        }
+        /* Mobile: hide 3D callout labels (they compete with the heading text) */
+        @media (max-width: 1023px) {
+            .hero-3d-overlay { display: none; }
+            .hero-hud {
+                font-size: 10px;
+                padding: 8px 10px;
+                gap: 5px;
+                bottom: 16px;
+                max-width: calc(100% - 24px);
+                letter-spacing: 0.14em;
+            }
+            .hero-hud button {
+                padding: 6px 9px;
+                letter-spacing: 0.12em;
+            }
+            .hero-sheet-id {
+                top: 84px;
+                right: 16px;
+                font-size: 11px;
+                letter-spacing: 0.22em;
+            }
+        }
+        /* Very narrow screens — tighten HUD so all 9 buttons wrap cleanly */
+        @media (max-width: 480px) {
+            .hero-hud {
+                font-size: 9px;
+                padding: 6px 8px;
+                gap: 4px;
+            }
+            .hero-hud button {
+                padding: 5px 7px;
+            }
+        }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="nav-bar fixed top-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="text-2xl font-black text-white tracking-tighter">Prime Plumbing</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-manrope text-sm font-semibold tracking-wide text-white border-b-2 border-white pb-1" href="index.html">Home</a>
+<a class="font-manrope text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors" href="services.html">Services</a>
+<a class="font-manrope text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors" href="about.html">About Us</a>
+<a class="font-manrope text-sm font-semibold tracking-wide text-white/80 hover:text-white transition-colors" href="contact.html">Contact</a>
+</nav>
+<a href="contact.html" class="hidden md:inline-block bg-white text-primary px-6 py-2.5 rounded-DEFAULT font-manrope text-sm font-bold hover:bg-primary-fixed transition-all duration-300 active:scale-95">
+                Book Now
+            </a>
+<button id="mobileMenuBtn" class="md:hidden text-white" aria-label="Toggle menu" aria-expanded="false">
+<span class="material-symbols-outlined text-3xl" id="menuIcon">menu</span>
+</button>
+</div>
+<div id="mobileMenu" class="md:hidden absolute top-full inset-x-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl shadow-xl hidden">
+<nav class="flex flex-col px-6 py-5 gap-1 font-manrope text-sm font-semibold">
+<a href="index.html" class="py-3 px-3 rounded-DEFAULT bg-primary-fixed text-primary">Home</a>
+<a href="services.html" class="py-3 px-3 rounded-DEFAULT text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">Services</a>
+<a href="about.html" class="py-3 px-3 rounded-DEFAULT text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">About Us</a>
+<a href="contact.html" class="py-3 px-3 rounded-DEFAULT text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+<a href="contact.html" class="mt-3 bg-primary-container text-on-primary-container py-3 rounded-DEFAULT font-bold text-center">Book Now</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-32 pb-24 lg:pt-40 lg:pb-32 min-h-[720px] flex items-center">
+<!-- Dark gradient tint for readability — mobile fades from top so 3D is visible behind heading; desktop fades left-to-right -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/85 via-black/55 to-black/30 lg:bg-gradient-to-r lg:from-black/85 lg:via-black/55 lg:to-black/10 pointer-events-none z-[1]"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40 pointer-events-none z-[1]"></div>
+<div class="hero-sheet-id">Sheet P-1 · Rev C · Kitchen Plumbing 3D</div>
+<!-- Content -->
+<div class="relative z-10 w-full max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<h1 class="reveal reveal-up reveal-d1 font-headline text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] tracking-tight mb-8 drop-shadow-[0_4px_24px_rgba(0,0,0,0.45)]">
+                        A Dedicated Plumbing &amp; <span class="text-primary-fixed-dim">Handyman</span> Services Company
+                    </h1>
+<p class="reveal reveal-up reveal-d2 text-white/90 text-lg max-w-xl mb-10 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]">
+                        We elevate home maintenance to an architectural craft. Precision, reliability, and unparalleled expertise for your most vital systems.
+                    </p>
+<div class="reveal reveal-up reveal-d3 flex flex-wrap gap-6 items-center">
+<a href="contact.html" class="bg-primary-container hover:bg-white hover:text-primary text-on-primary-container px-8 py-4 rounded-DEFAULT font-bold text-lg transition-all transform hover:scale-[1.02] shadow-2xl shadow-black/40 inline-block">
+                            Schedule Service
+                        </a>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUm1ehLGBd8tZdOp6LjfBOtieVM8rrYOkrasYKMHSWmz4hJROPG2M9Gy5YMsQnf6WPdaENqO2oClahg3yzdqQyJhHTd65bBpqcyHomjnnaY_Y9NNrizYui1fFTDmbyzjbH31UPSNfuKbI9Ov0ZKYkJq-ZxB2j0OBU-Zpd-nv32K1id7C7lFOYj6-gtc2pjXdmY4nvR-WWN6hO-eGctM8xfJugegdRLb6XEWZzk4ZOZra2jWQk4S8b8GmkorB9lH4rIBoNulStmwiyr"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPVjIHYw5pbLRA6efpOIv1Qw2NXh-7vTqOi-cX8fYjBe17KgZQErYHbfLqVnSHVrHfpAfpaQpbgg8O8ayYuWsoA0m34zzDgta8Tzd39dGPQYqL5J40NjvuEax8S2dPAgRamtoTqQUl1cB-F2v9xQp7wPrPn20NbaSCTmaNTobjIilsur7j_4edtD91_SmjS6UwiZZkAldxCSo3jalTyh7tqqqQznO1NcKmPOF3MpbeuTNGcTB2_Ko5SEUWudRV1e4R8Uakfwi3OrjR"/>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" alt="Customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9rZYhvGi1ETAIBHXOHZ9iMiTu0wOMO8iQKGFCxLOG6XAurBLdL5g7jZR5xZwlna3Eiq5hoEu14mIBSDhc6ed2__hdUYf88CVCI22nCSalUmpjCJK4r61deuKbKiBvVsa9K2TiU0TU0lzYZx-evsYn-9_4tjEXbAX3pIgq1XBPbIJ6iYly-LjJOohdaGmt-0FoYC84mHbBrF7LXs_WVjz1ieWGg1GsOJ560o8ESid-FMxnZBZkIdhWDa8efYzi7ArP7n6zuIiPJbGH"/>
+</div>
+</div>
+<div>
+<div class="font-bold text-white">1800+ Satisfied Customers</div>
+<div class="text-xs text-white/70">4.9/5 Rating across all services</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive 3D plumbing schematic — full-bleed behind everything -->
+<div class="hero-3d-bg">
+<canvas id="c3d"></canvas>
+<div class="hero-3d-overlay" id="overlay"></div>
+</div>
+</section>
+<!-- Value Pillar Cards -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="reveal reveal-up bg-primary p-10 rounded-lg editorial-shadow relative group overflow-hidden">
+<div class="w-16 h-16 bg-white/15 rounded-DEFAULT flex items-center justify-center mb-8 text-white group-hover:bg-white group-hover:text-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-white">Trusted Expertise</h3>
+<p class="text-white/90 leading-relaxed">Our technicians are master craftsmen with decades of combined architectural plumbing experience.</p>
+</div>
+<div class="reveal reveal-up reveal-d2 bg-primary p-10 rounded-lg editorial-shadow relative group overflow-hidden">
+<div class="w-16 h-16 bg-white/15 rounded-DEFAULT flex items-center justify-center mb-8 text-white group-hover:bg-white group-hover:text-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-white">24/7 Availability</h3>
+<p class="text-white/90 leading-relaxed">Plumbing emergencies don't wait for business hours, and neither do we. Rapid response guaranteed.</p>
+</div>
+<div class="reveal reveal-up reveal-d4 bg-primary p-10 rounded-lg editorial-shadow relative group overflow-hidden">
+<div class="w-16 h-16 bg-white/15 rounded-DEFAULT flex items-center justify-center mb-8 text-white group-hover:bg-white group-hover:text-primary transition-colors duration-500">
+<span class="material-symbols-outlined text-3xl">price_check</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-white">Upfront Pricing</h3>
+<p class="text-white/90 leading-relaxed">No hidden fees or architectural surprises. We provide transparent, fixed-price quotes before any work begins.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Best Service Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<img class="reveal reveal-left rounded-lg w-full aspect-[4/5] object-cover editorial-shadow transform -rotate-2" alt="Plumber working" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9EyMzP7px_00vc4kQMc6LGaaRLgM1uExKJiH9dvS-UMaO3qs7mG7RCKYNuurO8Tfo4XkqoZD-OFXhxVsZKsNcQy4Yz88G-Tl7UHluMzTecZqp2lmqa9-qnI1ONn66-ZjtntTPEoohuVpmHldPckgiIZaingoUYPm1UHCofktZ9pBtlqlMQI9CMlKjXZciT-pMhm6TR1H01OFXDzIE6TGMC0UvwOJ3iAYdLkDSruL3cMDD4L5cbtLCCNAmHF3Mra5uNy6CpTCzodsu"/>
+<img class="reveal reveal-left reveal-d2 rounded-lg w-full aspect-[4/5] object-cover editorial-shadow translate-y-12 rotate-2" alt="Luxury kitchen faucet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAurh20dUWDu-sfKtcBj_3z4jseUiNDSpwgJwplkpdLfsnd33TzEBYxRZbKKapLgLCdDEYuVX4e8kuZFLaWpQlXZzxY5pKsFW7APqehi5HK6tEyBSzOeGAmTzDvaYBa_tVGBEBKeOkcUG6oEw1ivBaFcN3iS3qUZp3OXdD61q43x4zC8RUGzFa9nLnmRU99jvcwNJN2snPcaAO7GkdO22XZD6tkHr10xs_8oJhEWB-tgpvXXDbOCWl_GGeAlibGSjFzyIhUnshYBIkk"/>
+</div>
+<div class="reveal reveal-scale reveal-d4 absolute -bottom-8 -right-8 w-40 h-40 bg-primary-container rounded-lg flex items-center justify-center editorial-shadow p-6 text-center">
+<div>
+<div class="text-4xl font-black text-on-primary-container">15+</div>
+<div class="text-xs font-bold text-on-primary-container uppercase tracking-widest mt-1">Years of Craft</div>
+</div>
+</div>
+</div>
+<div>
+<div class="reveal reveal-right inline-block text-primary font-bold text-sm tracking-widest uppercase mb-4">Excellence in Service</div>
+<h2 class="reveal reveal-right reveal-d1 font-headline text-4xl lg:text-5xl font-extrabold text-on-background mb-8 leading-tight">
+                        Our Company Provides The Best Plumbing Service
+                    </h2>
+<p class="reveal reveal-right reveal-d2 text-on-surface-variant text-lg mb-8 leading-relaxed">
+                        At Prime Plumbing, we don't just fix leaks; we engineer solutions that last. Our team approaches every handyman task with the eye of an architect and the hands of a master craftsman, ensuring your home functions with clinical precision.
+                    </p>
+<ul class="reveal reveal-right reveal-d3 space-y-4 mb-10">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-semibold">Architectural Standard Installations</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-semibold">Master-Certified Handyman Team</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<span class="font-semibold">Sustainable &amp; Eco-Friendly Solutions</span>
+</li>
+</ul>
+<a href="about.html" class="reveal reveal-right reveal-d4 bg-on-background text-white px-10 py-4 rounded-DEFAULT font-bold hover:bg-primary transition-all duration-300 inline-block">
+                        About More
+                    </a>
+</div>
+</div>
+</section>
+<!-- Performance Metrics -->
+<section class="py-20 bg-primary-container text-on-primary-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div class="reveal reveal-up">
+<div class="font-headline text-5xl font-black mb-2 tracking-tighter" data-counter="1800" data-format="plus">0</div>
+<div class="text-sm font-bold uppercase tracking-widest opacity-80">Projects Completed</div>
+</div>
+<div class="reveal reveal-up reveal-d1">
+<div class="font-headline text-5xl font-black mb-2 tracking-tighter" data-counter="4.9" data-format="star">0</div>
+<div class="text-sm font-bold uppercase tracking-widest opacity-80">Average Review</div>
+</div>
+<div class="reveal reveal-up reveal-d2">
+<div class="font-headline text-5xl font-black mb-2 tracking-tighter" data-counter="100" data-format="plus">0</div>
+<div class="text-sm font-bold uppercase tracking-widest opacity-80">Expert Plumbers</div>
+</div>
+<div class="reveal reveal-up reveal-d3">
+<div class="font-headline text-5xl font-black mb-2 tracking-tighter" data-counter="100" data-format="pct">0</div>
+<div class="text-sm font-bold uppercase tracking-widest opacity-80">Quality Service</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Booking Widget -->
+<div class="fixed bottom-8 right-8 z-40">
+<a href="contact.html" class="bg-white/80 glass-nav p-4 rounded-DEFAULT editorial-shadow border border-white/20 flex items-center gap-4 hover:scale-105 transition-transform">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="hidden sm:block">
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">Need Emergency Help?</div>
+<div class="text-lg font-black text-on-surface">1-800-PRIME</div>
+</div>
+</a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-slate-900 dark:text-white mb-6">Prime Plumbing</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm leading-relaxed mb-6">
+                    Redefining home maintenance through architectural precision and master craftsmanship since 2010.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-on-background mb-6">Services</h4>
+<ul class="space-y-4 font-inter text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-4" href="services.html">Residential</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-4" href="services.html">Commercial</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-4" href="services.html">Emergency</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-background mb-6">Company</h4>
+<ul class="space-y-4 font-inter text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-4" href="about.html">Our Story</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-4" href="contact.html">Book Appointment</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 hover:underline decoration-sky-500 underline-offset-4" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-on-background mb-6">Contact</h4>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm mb-4">123 Craftsmanship Way<br/>Plumbing Heights, NY 10111</p>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-sm">support@primeplumbing.com</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-400 dark:text-slate-500 font-inter text-xs">
+                © 2026 Prime Plumbing Services. The Architectural Authority in Handyman Craft.
+            </p>
+</div>
+</footer>
+<script>
+(function() {
+  const btn = document.getElementById('mobileMenuBtn');
+  const menu = document.getElementById('mobileMenu');
+  const icon = document.getElementById('menuIcon');
+  if (btn && menu && icon) {
+    btn.addEventListener('click', () => {
+      const willOpen = menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      icon.textContent = willOpen ? 'close' : 'menu';
+      btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    });
+    menu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        icon.textContent = 'menu';
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const nav = document.querySelector('.nav-bar');
+  if (nav) {
+    const onScroll = () => {
+      if (window.scrollY > 16) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    const ro = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          ro.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => ro.observe(el));
+  }
+
+  const counters = document.querySelectorAll('[data-counter]');
+  if (counters.length) {
+    const format = (num, fmt) => {
+      if (fmt === 'k2') return (num / 1000).toFixed(2) + 'k';
+      if (fmt === 'plus') return Math.round(num) + '+';
+      if (fmt === 'pct') return Math.round(num) + '%';
+      if (fmt === 'star') return num.toFixed(1) + '★';
+      return Math.round(num).toString();
+    };
+    const animate = (el) => {
+      const target = parseFloat(el.dataset.counter);
+      const fmt = el.dataset.format || '';
+      const duration = 1600;
+      const start = performance.now();
+      const step = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = format(target * eased, fmt);
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    const section = counters[0].closest('section');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          counters.forEach(animate);
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    io.observe(section);
+  }
+})();
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const canvas = document.getElementById('c3d');
+const overlay = document.getElementById('overlay');
+if (canvas && overlay) {
+  const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:true});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  const scene = new THREE.Scene();
+  scene.background = null;
+  scene.fog = new THREE.FogExp2(0x061a2e, 0.012);
+
+  const camera = new THREE.PerspectiveCamera(38, 1, 0.5, 1000);
+  // 9x16 portrait framing on mobile, 16x9 landscape framing on desktop
+  const isPortrait = window.matchMedia('(max-width: 1023px)').matches;
+  camera.position.set(...(isPortrait ? [26, 24, 26] : [28, 22, 28]));
+
+  const controls = new OrbitControls(camera, canvas);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.08;
+  controls.target.set(8, 3, 6);
+  controls.minDistance = 14;
+  controls.maxDistance = 70;
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 0.6;
+  controls.enableZoom = false;
+
+  const INK = 0x9ed8ff;
+  const HOT = 0xff6a3d, COLD = 0x3aa0ff, DRAIN = 0x8ad0a8, VENT = 0xd7b26a;
+
+  const wireStrong = new THREE.LineBasicMaterial({color: INK, transparent:true, opacity:.85});
+  const fillMat = new THREE.MeshBasicMaterial({color: 0x9ed8ff, transparent:true, opacity:.04, side: THREE.DoubleSide, depthWrite:false});
+
+  const pipeMat = (color) => new THREE.MeshBasicMaterial({color});
+  const matHot = pipeMat(HOT);
+  const matCold = pipeMat(COLD);
+  const matDrain = pipeMat(DRAIN);
+  const matVent = pipeMat(VENT);
+
+  function pipeTube(points, radius, mat, group){
+    if (points.length < 2) return;
+    const v = points.map(p => new THREE.Vector3(p[0], p[2], p[1]));
+    const curve = new THREE.CatmullRomCurve3(v, false, 'catmullrom', 0.0);
+    const segs = Math.max(24, v.length * 8);
+    const geom = new THREE.TubeGeometry(curve, segs, radius, 10, false);
+    group.add(new THREE.Mesh(geom, mat));
+    const glowMat = new THREE.MeshBasicMaterial({color: mat.color, transparent:true, opacity:0.22, depthWrite:false});
+    const glowGeom = new THREE.TubeGeometry(curve, segs, radius*2.6, 10, false);
+    group.add(new THREE.Mesh(glowGeom, glowMat));
+  }
+
+  function fittingSphere(x,y,z, radius, color, group){
+    const mesh = new THREE.Mesh(new THREE.SphereGeometry(radius, 14, 10), new THREE.MeshBasicMaterial({color:0x061a2e}));
+    mesh.position.set(x, z, y);
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(radius*1.05, radius*0.12, 8, 18), new THREE.MeshBasicMaterial({color}));
+    ring.position.copy(mesh.position);
+    group.add(mesh); group.add(ring);
+  }
+
+  const gShell = new THREE.Group(); scene.add(gShell);
+  const gSupply = new THREE.Group(); scene.add(gSupply);
+  const gDrain = new THREE.Group(); scene.add(gDrain);
+  const gVent = new THREE.Group(); scene.add(gVent);
+
+  /* Floor */
+  {
+    const plane = new THREE.Mesh(new THREE.PlaneGeometry(16, 12), new THREE.MeshBasicMaterial({color:0x0a2340, transparent:true, opacity:.55, side:THREE.DoubleSide}));
+    plane.rotation.x = -Math.PI/2;
+    plane.position.set(8, 0, 6);
+    gShell.add(plane);
+
+    const gridG = new THREE.BufferGeometry();
+    const verts = [];
+    for (let x=0; x<=16; x++){ verts.push(x,0.001,0, x,0.001,12); }
+    for (let y=0; y<=12; y++){ verts.push(0,0.001,y, 16,0.001,y); }
+    gridG.setAttribute('position', new THREE.Float32BufferAttribute(verts,3));
+    gShell.add(new THREE.LineSegments(gridG, new THREE.LineBasicMaterial({color:0x13324f, transparent:true, opacity:.8})));
+
+    const borderPts = [
+      new THREE.Vector3(0,0.002,0), new THREE.Vector3(16,0.002,0),
+      new THREE.Vector3(16,0.002,12), new THREE.Vector3(0,0.002,12),
+      new THREE.Vector3(0,0.002,0),
+    ];
+    gShell.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(borderPts), wireStrong));
+  }
+
+  function wall(x,y,w,d){
+    const h = 8;
+    const geom = new THREE.BoxGeometry(w, h, d);
+    const line = new THREE.LineSegments(new THREE.EdgesGeometry(geom), new THREE.LineBasicMaterial({color:INK, transparent:true, opacity:.45}));
+    line.position.set(x+w/2, h/2, y+d/2);
+    gShell.add(line);
+    const mesh = new THREE.Mesh(geom, new THREE.MeshBasicMaterial({color:INK, transparent:true, opacity:.02, side:THREE.DoubleSide, depthWrite:false}));
+    mesh.position.copy(line.position);
+    gShell.add(mesh);
+  }
+  wall(0, 0, 16, 0.4);
+  wall(15.6, 0, 0.4, 12);
+  wall(0, 11.6, 16, 0.4);
+  wall(0, 0, 0.4, 12);
+
+  function cabinetWire(x,y,z,w,d,h){
+    const g = new THREE.BoxGeometry(w,h,d);
+    const line = new THREE.LineSegments(new THREE.EdgesGeometry(g), new THREE.LineBasicMaterial({color:INK, transparent:true, opacity:.75}));
+    line.position.set(x+w/2, z+h/2, y+d/2);
+    gShell.add(line);
+    const mesh = new THREE.Mesh(g, fillMat);
+    mesh.position.copy(line.position);
+    gShell.add(mesh);
+  }
+  cabinetWire(1, 0.4, 0, 14, 2, 3);
+  cabinetWire(0.8, 0.3, 3, 14.4, 2.15, 0.1);
+  cabinetWire(13.6, 2, 0, 2, 5, 3);
+  cabinetWire(13.5, 2, 3, 2.1, 5.1, 0.1);
+  cabinetWire(5, 7, 0, 6, 2.5, 3);
+  cabinetWire(4.8, 6.9, 3, 6.4, 2.7, 0.1);
+
+  function sink(x,y,z,w,d,depth){
+    const g = new THREE.BoxGeometry(w, depth, d);
+    const line = new THREE.LineSegments(new THREE.EdgesGeometry(g), new THREE.LineBasicMaterial({color:INK, transparent:true, opacity:.95}));
+    line.position.set(x+w/2, z-depth/2, y+d/2);
+    gShell.add(line);
+    const m = new THREE.Mesh(g, new THREE.MeshBasicMaterial({color:0x0a2340, transparent:true, opacity:.75, side:THREE.DoubleSide}));
+    m.position.copy(line.position);
+    gShell.add(m);
+  }
+  sink(3.2, 0.55, 3.05, 1.4, 1.5, 0.7);
+  sink(4.75, 0.55, 3.05, 1.4, 1.5, 0.7);
+
+  /* Faucet arch */
+  {
+    const pts = [
+      new THREE.Vector3(4.95, 3.1, 0.8),
+      new THREE.Vector3(4.95, 3.8, 0.8),
+      new THREE.Vector3(4.95, 4.4, 0.8),
+      new THREE.Vector3(4.95, 4.4, 0.4),
+    ];
+    const curve = new THREE.CatmullRomCurve3(pts);
+    gShell.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 40, 0.05, 8, false), new THREE.MeshBasicMaterial({color:INK})));
+  }
+
+  cabinetWire(6.5, 0.4, 0.1, 1.9, 0.02, 2.8);
+  cabinetWire(10, 0.4, 0, 3, 2.5, 6);
+  {
+    const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.03,0.03,0.8,8), new THREE.MeshBasicMaterial({color:INK}));
+    bar.position.set(11.35, 3.3, 0.38); gShell.add(bar);
+    const bar2 = bar.clone(); bar2.position.x = 11.75; gShell.add(bar2);
+  }
+
+  cabinetWire(13.8, 3, 3, 1.6, 1.8, 0.08);
+  [[14.2,3.4],[14.9,3.4],[14.2,4.2],[14.9,4.2]].forEach(([bx,by])=>{
+    const torus = new THREE.Mesh(new THREE.TorusGeometry(0.24, 0.02, 6, 18), new THREE.MeshBasicMaterial({color:INK, transparent:true, opacity:.8}));
+    torus.position.set(bx, 3.12, by);
+    torus.rotation.x = Math.PI/2;
+    gShell.add(torus);
+  });
+
+  /* Pot filler */
+  {
+    const pts = [
+      new THREE.Vector3(15.6, 5.5, 3),
+      new THREE.Vector3(15, 5.5, 3),
+      new THREE.Vector3(14.8, 5.5, 3.8),
+      new THREE.Vector3(14.6, 5, 3.8),
+    ];
+    const curve = new THREE.CatmullRomCurve3(pts);
+    gShell.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 40, 0.05, 10, false), matCold));
+  }
+
+  cabinetWire(4.7, 0.4, -1.2, 1.2, 1.1, 1.2);
+
+  /* Pipes */
+  pipeTube([[-0.5,1,-0.5],[0.3,1,-0.5],[0.3,1,-0.2],[5.3,1,-0.2]], 0.08, matCold, gSupply);
+  pipeTube([[5.3,1,-0.2],[5.3,1,2.4]], 0.08, matCold, gSupply);
+  pipeTube([[5.3,1,2.4],[5.3,1,3.0],[4.9,0.6,3.0],[4.9,0.6,3.3]], 0.06, matCold, gSupply);
+
+  pipeTube([[-0.5,1.35,-0.5],[0.55,1.35,-0.5],[0.55,1.35,0.1],[5.6,1.35,0.1]], 0.07, matHot, gSupply);
+  pipeTube([[5.6,1.35,0.1],[5.6,1.35,2.4]], 0.07, matHot, gSupply);
+  pipeTube([[5.6,1.35,2.4],[5.6,1.35,3.0],[5.0,0.6,3.0],[5.0,0.6,3.3]], 0.06, matHot, gSupply);
+  pipeTube([[5.6,1.35,2.6],[7.5,1.35,2.6],[7.5,0.5,2.6],[7.5,0.5,2.2]], 0.055, matHot, gSupply);
+
+  pipeTube([[3.0,1,-0.2],[3.0,1,-0.4],[11.8,1,-0.4],[11.8,1,-0.2],[11.8,1,2.0]], 0.035, matCold, gSupply);
+  pipeTube([[5.3,1,-0.2],[15,1,-0.2],[15,3,-0.2],[15.6,3,-0.2],[15.6,3,5.5]], 0.07, matCold, gSupply);
+  pipeTube([[15.6,3,5.5],[15.2,3,5.5]], 0.06, matCold, gSupply);
+
+  pipeTube([
+    [4.9, 1.0, 2.7], [4.9, 1.0, 0.95],
+    [4.7, 1.0, 0.7], [4.7, 1.0, 0.55], [4.7, 1.15, 0.55],
+    [5.1, 1.15, 0.55], [5.25, 1.15, 0.7], [5.25, 1.15, 0.9]
+  ], 0.12, matDrain, gDrain);
+  pipeTube([[5.25,1.15,0.9],[5.25,1.15,0.0],[5.25,1.15,-0.15],[5.25,11.7,-0.15]], 0.12, matDrain, gDrain);
+  pipeTube([[5.25,1.15,0.9],[5.3,0.8,0.9],[5.3,0.8,-0.3]], 0.09, matDrain, gDrain);
+  pipeTube([[7.5,0.5,2.0],[7.5,0.5,2.8],[6.2,0.5,2.8],[6.2,0.5,1.0],[5.3,0.8,1.0]], 0.08, matDrain, gDrain);
+  pipeTube([[5.25, 11.7, -0.5],[5.25, 11.7, 8]], 0.14, matDrain, gDrain);
+
+  pipeTube([[5.25, 11.7, 6],[5.25, 11.7, 9.5]], 0.08, matVent, gVent);
+  for (let z=6; z<=9.5; z+=0.35){
+    const s = new THREE.Mesh(new THREE.SphereGeometry(0.04, 8, 6), new THREE.MeshBasicMaterial({color:VENT}));
+    s.position.set(5.25, z, 11.7); gVent.add(s);
+  }
+  pipeTube([[5.3,1,0.6],[5.3,1,4.0],[5.3,11.7,4.0],[5.25,11.7,4.0]], 0.08, matVent, gVent);
+
+  const joints = [
+    [0.3,1,-0.2, COLD],[5.3,1,-0.2, COLD],[5.3,1,2.4, COLD],
+    [0.55,1.35,0.1, HOT],[5.6,1.35,0.1, HOT],[5.6,1.35,2.4, HOT],[5.6,1.35,2.6, HOT],
+    [7.5,1.35,2.6, HOT],[7.5,0.5,2.6, HOT],[7.5,0.5,2.2, HOT],
+    [3.0,1,-0.2, COLD],[11.8,1,-0.2, COLD],[11.8,1,2.0, COLD],
+    [15,1,-0.2, COLD],[15,3,-0.2, COLD],[15.6,3,-0.2, COLD],[15.6,3,5.5, COLD],
+    [5.25,1.15,0.55, DRAIN],[5.25,1.15,0.9, DRAIN],
+    [5.25,1.15,-0.15, DRAIN],[5.25,11.7,-0.15, DRAIN],
+    [5.25,11.7,4.0, VENT],
+  ];
+  joints.forEach(([x,y,z,c])=>{
+    const group = (c===DRAIN) ? gDrain : (c===VENT ? gVent : gSupply);
+    fittingSphere(x,y,z, 0.1, c, group);
+  });
+
+  const callouts = [
+    {id:'01', x:4.95,y:0.8,z:3.3, title:'DOUBLE-BASIN SINK', sub:'STAINLESS 30" × 18"'},
+    {id:'02', x:5.0, y:0.6,z:3.5, title:'FAUCET',          sub:'½" H/C INLETS'},
+    {id:'03', x:5.45,y:1.0,z:2.4, title:'UNDER-SINK SHUTOFFS', sub:'¼-TURN ANGLE'},
+    {id:'04', x:7.5, y:0.5,z:2.2, title:'DISHWASHER',       sub:'HOT ⅜" · HI-LOOP'},
+    {id:'05', x:11.8,y:1.0,z:2.0, title:'REFRIGERATOR',     sub:'¼" PEX ICE/WATER'},
+    {id:'06', x:15.4,y:3.0,z:5.5, title:'POT FILLER',       sub:'½" COLD DEDICATED'},
+    {id:'07', x:14.6,y:3.8,z:3.1, title:'RANGE',            sub:'GAS · SEE M-1'},
+    {id:'08', x:5.3, y:0.8,z:-0.3,title:'DISPOSAL',         sub:'½ HP · 1½" OUT'},
+    {id:'09', x:4.9, y:1.1,z:0.6, title:'P-TRAP',           sub:'1½" S.J.'},
+    {id:'10', x:5.25,y:11.7,z:0,  title:'DRAIN TIE-IN',     sub:'2" PVC → STACK'},
+    {id:'11', x:5.25,y:11.7,z:8,  title:'MAIN STACK',       sub:'3" VENT THRU ROOF'},
+    {id:'12', x:5.3, y:6,  z:4.0, title:'KITCHEN VENT',     sub:'2" PVC REVENT'},
+    {id:'13', x:0.5, y:1.0,z:-0.2,title:'COLD SUPPLY IN',   sub:'¾" TYPE-L CU'},
+    {id:'14', x:0.5, y:1.35,z:0.1,title:'HOT SUPPLY IN',    sub:'½" TYPE-L CU'},
+    {id:'15', x:3.0, y:1.0,z:-0.3,title:'FRIDGE LINE TEE',  sub:'¼" BRAIDED S.S.'},
+  ];
+  const anchors = callouts.map(c=>{
+    const m = new THREE.Object3D();
+    m.position.set(c.x, c.z, c.y);
+    scene.add(m);
+    const dot = new THREE.Mesh(new THREE.SphereGeometry(0.08, 10, 8), new THREE.MeshBasicMaterial({color:INK}));
+    dot.position.copy(m.position);
+    scene.add(dot);
+    return m;
+  });
+  const coEls = callouts.map((c)=>{
+    const el = document.createElement('div');
+    el.className = 'co';
+    el.innerHTML = `<span class="n">${c.id}</span><span>${c.title}</span><span class="sub">${c.sub}</span>`;
+    overlay.appendChild(el);
+    return el;
+  });
+
+  const tgl = (id, group) => {
+    const b = document.getElementById(id);
+    if (!b) return;
+    b.addEventListener('click', ()=>{
+      group.visible = !group.visible;
+      b.classList.toggle('on', group.visible);
+    });
+  };
+  tgl('tglSupply', gSupply);
+  tgl('tglDrain', gDrain);
+  tgl('tglVent', gVent);
+  tgl('tglWalls', gShell);
+
+  document.getElementById('tglAuto')?.addEventListener('click', (e)=>{
+    controls.autoRotate = !controls.autoRotate;
+    e.currentTarget.classList.toggle('on', controls.autoRotate);
+  });
+  let labelsOn = true;
+  document.getElementById('tglLabels')?.addEventListener('click', (e)=>{
+    labelsOn = !labelsOn;
+    overlay.style.display = labelsOn ? '' : 'none';
+    e.currentTarget.classList.toggle('on', labelsOn);
+  });
+
+  function setView(pos, tgt){
+    const start = camera.position.clone();
+    const startT = controls.target.clone();
+    const end = new THREE.Vector3(...pos);
+    const endT = new THREE.Vector3(...tgt);
+    const t0 = performance.now();
+    function anim(){
+      const t = Math.min(1, (performance.now() - t0)/700);
+      const k = t<0.5 ? 2*t*t : 1-Math.pow(-2*t+2,2)/2;
+      camera.position.lerpVectors(start, end, k);
+      controls.target.lerpVectors(startT, endT, k);
+      controls.update();
+      if (t<1) requestAnimationFrame(anim);
+    }
+    anim();
+  }
+  document.getElementById('view1')?.addEventListener('click', ()=> setView([28,22,28],[8,3,6]));
+  document.getElementById('view2')?.addEventListener('click', ()=> setView([8,40,6.01],[8,0,6]));
+  document.getElementById('view3')?.addEventListener('click', ()=> setView([8,6,34],[8,3,6]));
+
+  function layout(){
+    const rect = canvas.getBoundingClientRect();
+    renderer.setSize(rect.width, rect.height, false);
+    camera.aspect = rect.width / Math.max(rect.height, 1);
+    camera.updateProjectionMatrix();
+  }
+  layout();
+  window.addEventListener('resize', layout);
+
+  function projectToScreen(v3){
+    const rect = canvas.getBoundingClientRect();
+    const v = v3.clone().project(camera);
+    return {
+      x: (v.x * 0.5 + 0.5) * rect.width,
+      y: (-v.y * 0.5 + 0.5) * rect.height,
+      z: v.z
+    };
+  }
+
+  function tick(){
+    controls.update();
+    renderer.render(scene, camera);
+    if (labelsOn){
+      anchors.forEach((a,i)=>{
+        const p = projectToScreen(a.position);
+        const el = coEls[i];
+        if (p.z < 1 && p.z > 0) {
+          el.style.display = '';
+          el.style.left = (p.x + 12) + 'px';
+          el.style.top = (p.y - 12) + 'px';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+    requestAnimationFrame(tick);
+  }
+  tick();
+}
+</script>
+</body></html>
